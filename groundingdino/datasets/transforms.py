@@ -96,7 +96,7 @@ def resize(image, target, size, max_size=None):
                 size = int(round(max_size * min_original_size / max_original_size))
 
         if (w <= h and w == size) or (h <= w and h == size):
-            return (h, w)
+            return w, h
 
         if w < h:
             ow = size
